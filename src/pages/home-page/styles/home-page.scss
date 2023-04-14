@@ -1,10 +1,14 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
-///
-///
+@import '/src/global-styles/style.scss';
+@import './cards-list.scss';
+@import './card.scss';
+@import './play-button.scss';
+@import './banner.scss';
 
 #home-page {
-  @include flex(center, center, row);
+  @include flex(center, center, column);
   background-color: var(--color-background);
   height: 100vh;
+  gap: 24px;
 }

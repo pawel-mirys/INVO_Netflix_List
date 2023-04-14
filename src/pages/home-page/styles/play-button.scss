@@ -1,0 +1,15 @@
+.play-button {
+  @include flex(center, center, row);
+  margin-left: 24px;
+  padding: 12px 16px;
+  gap: 10px;
+  border-radius: 444px;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+
+  &__text {
+    @include font-button;
+    color: black;
+  }
+}
