@@ -1,0 +1,29 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import 'styles/normalize.scss';
+@import 'styles/root.scss';
+@import 'styles/fonts.scss';
+@import 'styles/mixins.scss';
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+h2 {
+  @include font-dt-24;
+}
+
+p {
+  @include font-dt-16;
+}
+
+button {
+  @include font-dt-14;
+}
+
+@media (max-width: 350px) {
+  p {
+    font-size: 12px;
+  }
+}
