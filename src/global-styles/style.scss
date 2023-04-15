@@ -12,18 +12,21 @@ body {
 
 h2 {
   @include font-dt-24;
+  color: white;
+  margin: 0;
 }
 
 p {
   @include font-dt-16;
+  color: var(--color-primary-200);
+  margin: 0;
 }
 
-button {
-  @include font-dt-14;
-}
-
-@media (max-width: 350px) {
+@media (max-width: 680px) {
+  h2 {
+    @include font-m-18;
+  }
   p {
-    font-size: 12px;
+    @include font-m-14;
   }
 }
