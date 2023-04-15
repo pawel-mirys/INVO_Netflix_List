@@ -21,4 +21,12 @@
       flex-direction: column;
     }
   }
+  @media (max-width: 680px) {
+    @include rounding24;
+    width: calc(100% - 32px);
+    padding: 16px;
+    &__cards-list {
+      gap: 12px;
+    }
+  }
 }

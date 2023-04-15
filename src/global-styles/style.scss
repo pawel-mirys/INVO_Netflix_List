@@ -22,8 +22,11 @@ p {
   margin: 0;
 }
 
-@media (max-width: 350px) {
+@media (max-width: 680px) {
+  h2 {
+    @include font-m-18;
+  }
   p {
-    font-size: 12px;
+    @include font-m-14;
   }
 }
