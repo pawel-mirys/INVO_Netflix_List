@@ -11,4 +11,7 @@
   background-color: var(--color-background);
   height: 100vh;
   gap: 24px;
+  @media (max-width: 1140px) {
+    gap: 15px;
+  }
 }

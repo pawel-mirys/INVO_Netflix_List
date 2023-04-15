@@ -13,7 +13,7 @@
     height: 100%;
     &::before {
       @include banner-gradient;
-      @include rounding32;
+      @include rounding24;
     }
   }
   &__header {
@@ -27,11 +27,15 @@
     height: 100%;
     width: 632px;
     object-fit: fill;
-    border-top-right-radius: 32px;
-    border-bottom-right-radius: 32px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
   }
 
   .play-button {
     margin-right: 32px;
+  }
+
+  @media (max-width: 1140px) {
+    width: calc(100% - 64px);
   }
 }
